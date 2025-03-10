@@ -2,12 +2,12 @@ import random
 import matplotlib.pyplot as plt
 
 num_points = 100
-x = [random.uniform(0, 50) for _ in range(num_points)]
-y = [random.uniform(0, 50) for _ in range(num_points)]
+x = [random.uniform(0, 50) for i in range(num_points)]
+y = [random.uniform(0, 50) for i in range(num_points)]
 points = list(zip(x, y))
 k = random.randint(3,5)
-x1 = [random.uniform(0, 50) for _ in range(k)]
-y1 = [random.uniform(0, 50) for _ in range(k)]
+x1 = [random.uniform(0, 50) for i in range(k)]
+y1 = [random.uniform(0, 50) for i in range(k)]
 center = list(zip(x1, y1))
 plt.scatter(x, y, color='pink', marker='o', label='точки')
 plt.scatter(x1, y1, color='green', marker='o', label='центр кластера')
