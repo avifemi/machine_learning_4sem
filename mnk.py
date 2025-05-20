@@ -78,10 +78,10 @@ plt.show()
 
 #вывод
 print("параметры моделей и ошибки:")
-print(f"линейная: y = {coef_lin[0]:.4f}x + {coef_lin[1]:.4f}, S = {err_lin:.6f}")
-print(f"степенная: y = {coef_pow[0]:.4f}x^{coef_pow[1]:.4f}, S = {err_pow:.6f}")
-print(f"показательная: y = {coef_exp[0]:.4f}e^({coef_exp[1]:.4f}x), S = {err_exp:.6f}")
-print(f"квадратичная: y = {coef_quad[0]:.4f}x² + {coef_quad[1]:.4f}x + {coef_quad[2]:.4f}, S = {err_quad:.6f}")
+print(f"линейная: y = {coef_lin[0]:.4f}x + {coef_lin[1]:.4f}, S = {err_lin:.4f}")
+print(f"степенная: y = {coef_pow[0]:.4f}x^{coef_pow[1]:.4f}, S = {err_pow:.4f}")
+print(f"показательная: y = {coef_exp[0]:.4f}e^({coef_exp[1]:.4f}x), S = {err_exp:.4f}")
+print(f"квадратичная: y = {coef_quad[0]:.4f}x² + {coef_quad[1]:.4f}x + {coef_quad[2]:.4f}, S = {err_quad:.4f}")
 
 #лучшая модель
 errors = {
@@ -91,4 +91,4 @@ errors = {
     "квадратичная": err_quad
 }
 best = min(errors, key=errors.get)
-print(f"\nнаилучшая аппроксимация: {best} модель (S = {errors[best]:.6f})")
+print(f"\nнаилучшая аппроксимация: {best} модель (S = {errors[best]:.4f})")
