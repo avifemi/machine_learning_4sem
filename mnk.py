@@ -91,4 +91,4 @@ errors = {
     "квадратичная": err_quad
 }
 best = min(errors, key=errors.get)
-print(f"\nнаилучшая аппроксимация: {best} модель (S = {errors[best]:.4f})")
+print(f"\nнаилучшая аппроксимация: {best} модель S = {errors[best]:.4f}")
